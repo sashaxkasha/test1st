@@ -1,0 +1,6 @@
+---
+- include_tasks: task-a.yml
+- include_tasks: task-b.yml
+- include_tasks: task-c.yml
+
+

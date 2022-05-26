@@ -1,0 +1,8 @@
+---
+- name: Copy template
+  template:
+    src: my_file_txt.j2 
+    dest: ./opt/dir_02/
+
+
+ 

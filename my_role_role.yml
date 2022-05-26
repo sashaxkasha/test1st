@@ -1,0 +1,7 @@
+---
+- name: my_role
+  hosts: servers_group
+  user: alex
+  roles: 
+     - my_role
+

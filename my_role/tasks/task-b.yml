@@ -1,0 +1,8 @@
+---
+- name: Copy file with owner and permissions
+  copy:
+    became: yes
+    src: filename.txt
+    dest: ./opt/dir_02/
+    mode: '755'
+ 

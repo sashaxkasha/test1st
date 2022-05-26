@@ -1,0 +1,16 @@
+---
+- name: сreate directory
+  hosts:
+    - servers_group
+#  vars:
+#    var_exmpl_xx: "Ты пидор World"
+#    var_exmpl_yy: "Нет ты"
+#    var_exmpl_zz: "А может ты?"                  
+  tasks:
+     - name: Copy template
+       template:
+          src: my_file_txt.j2 
+          dest: ./opt/dir_02/
+
+
+ 

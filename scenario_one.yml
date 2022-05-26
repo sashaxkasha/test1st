@@ -1,0 +1,12 @@
+---
+- name: сreate directory
+  hosts: 10.168.1.10
+  become: true
+  tasks:
+     - name: сreate directory
+       file:
+          path=/tmp/example_dir
+          owner=root
+          group=root
+          became=yes
+          state=directory
