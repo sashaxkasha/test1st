@@ -5,15 +5,14 @@
   tasks:
      - name: Create directories
        file:
-          path: ./opt/{{item}}
-          state: directory
+          path: /opt/{{item}}
+          state: directory        
        loop: 
           - dir_01
           - dir_02
      - name: Copy file with owner and permissions
        copy:
-          became: yes
           src: filename.txt
-          dest: ./opt/dir_02/
+          dest: /opt/dir_02/
           mode: '755'
  
