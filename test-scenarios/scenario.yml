@@ -1,12 +1,14 @@
 ---
 - name: сreate directory
   hosts:
-    - all
+    - server-one
   tasks:
      - name: Create directories
        file:
           path: /opt/{{item}}
-          state: directory        
+          state: directory
+          owner: root
+          group: root        
        loop: 
           - dir_01
           - dir_02
