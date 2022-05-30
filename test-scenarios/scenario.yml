@@ -1,7 +1,7 @@
 ---
 - name: сreate directory
   hosts:
-    - server-one
+    - all
   tasks:
      - name: Create directories
        file:
