@@ -1,7 +1,7 @@
 ---
 - name: сreate directory
   hosts:
-    - all
+    - servers_group
   tasks:
      - name: Create directories
        file:
